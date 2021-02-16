@@ -1,0 +1,1 @@
+Just open 'main.html' in your browser and enjoy the Game ;) 
