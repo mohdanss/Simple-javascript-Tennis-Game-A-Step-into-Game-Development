@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- title -->
+    <title>Tennis Game</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Reggae+One&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <!-- Score, Title etc Container -->
+    <div class="header-Container" id="header">
+
+        <!-- Main Row -->
+        <div class="row rowHead">
+
+            <!-- col - 1 (Attempts) -->
+            <div class="col-lg-3">
+                <div class=" c-1">
+                    <span>Attempts Left</span>
+                    <p id="lives"></p>
+                </div>
+            </div>
+
+            <!-- col - 2 (Title) -->
+            <div class="col-lg-6 p-0">
+                <div class="c-3">
+                    <span class="title">Tennis Game</span>
+                    <span class="developer L">Developed by
+                        <a href="https://github.com/muhammad1244" target="_blank">ANC</a>
+                    </span>
+                    <span class="developer R">Credits :
+                        <a href="https://www.udemy.com/course/code-your-first-game/" target="_blank">Sir Chris
+                            DeLeon</a>
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- col - 3 (Score) -->
+            <div class="col-lg-3 m-0">
+                <div class=" c-2">
+                    <span>Score</span>
+                    <p id="score">0</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- row ends here  -->
+
+    </div>
+
+    <!-- main canvas container -->
+    <div class="container text-center">
+        <canvas id="gameCanvas" width="1300" height="600"></canvas>
+    </div>
+
+    <!-- After Game Ends this appears, to ask the user if one wants to play again -->
+    <div class="startAgain">
+        <a href="main.html" class="link" id="linkPlayAgain"><i class="fa fa-play"></i> Click to Start Again </a>
+    </div>
+
+    <!-- Select Level, At the start of the game -->
+    <div class="selLevel" id="level">
+        <p class="welcome">Welcome to Tennis Game!</p>
+        <div class="borderC">
+            <p>Difficulty Level</p>
+            <button class="dropbtn" onclick="easy()">Easy</button>
+            <br>
+            <button class="dropbtn" onclick="medium()">Medium</button>
+            <br>
+            <button class="dropbtn" onclick="hard()">Hard</button>
+        </div>
+        <p class="volkano"><i class="fa fa-smile"></i> By Volkano</p>
+    </div>
+
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+ <!-- Code By Anc -->
